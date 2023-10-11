@@ -34,4 +34,7 @@ def create_table(sql_filepath:str):
             pg_connection.commit()
         except psycopg2.ProgrammingError as msg:
             print(f'Command Skipped: {msg}')
+
+    if__name__ == '__main__':
+    create_tables('/Users/kali/Documents/GitHub/SQL_AmazonCart/amazon_mock_create.sql')
             
